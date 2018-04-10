@@ -9,9 +9,10 @@ var kinect = new Kinect2();
 if(kinect.open()) {
     server.listen(8000);
     console.log('Server listening on port 8000');
+    console.log('Point your browser to http://www.webondevices.com');
 
     app.get('/', function(req, res) {
-        res.sendFile(__dirname + '/indexkinect.html');
+        res.sendFile(__dirname + '/public/index.html');
     });
 
     kinect.on('bodyFrame', function(bodyFrame){
