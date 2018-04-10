@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+<title>Title of the document</title>
+<script> 
+	var socket = io.connect('http://www.webondevices.com/'); 
+	socket.on('bodyFrame', interpretData);
+	function interpretData(bodyFrame) {
+    // Web Socket message:
+    console.log(bodyFrame);
+}
+// Select the first body appearing in the data
+	var user = bodyFrame.bodies[0];
+// Left wrist
+	var rightHandPositon = user.joints[11].depthX;
+</script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

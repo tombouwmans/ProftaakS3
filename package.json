@@ -1,0 +1,17 @@
+{
+  "name": "Kinect",
+  "version": "1.0.0",
+  "description": "Hier wordt iets gedaan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "kinect2": "^0.1.5",
+    "node-gyp": "^3.6.2",
+    "socket.io": "^2.1.0"
+  }
+}
